@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="MenuCategoriesApp">
+    <head>
+        <title>Chira</title>
+        <script src="angular.min.js"></script>
+        <script src="app11.js"></script>
+        
+        <style>body { font-size: 1.2em; }
+               li {list-style: none;}
+               div{float: left;}
+        </style>
+    </head>
+    <body>
+        <h1>Ajax using $http</h1>
+        <div ng-controller="MenuCategoriesCntroller as menu">
+            <h1>List Of Menu Catagoies</h1>
+            
+            <ul>
+                    <li ng-repeat="catagory in menu.categoies">
+                       
+                        ({{ category.short_name }})
+                        {{ category.name }}
+    
+                    </li>
+                </ul>
+                
+         </div>
+         
+         
+    </body>
+</html>
